@@ -1,12 +1,16 @@
-import Clock from './Clock';
+import React from 'react';
+import Clock from './components/Clock';
 
-function Game() {
-    return (
-        <div>
-            Hello Wolrd
-            <Clock date={new Date()} />
-        </div>
-    );
+class Game extends React.Component {
+
+    render(){
+        return (
+            <div>
+                Hello Wolrd
+                <Clock/>
+            </div>
+        );
+    }
 }
 
 export default Game;
